@@ -1,6 +1,6 @@
 package com.jkh.space.repository;
 
-import com.jkh.space.fisrt.domain.Member;
+import com.jkh.space.fisrt.domain.member.Member;
 import com.jkh.space.fisrt.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;

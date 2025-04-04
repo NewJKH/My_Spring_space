@@ -1,6 +1,6 @@
 package com.jkh.space.fisrt.repository;
 
-import com.jkh.space.fisrt.domain.Member;
+import com.jkh.space.fisrt.domain.member.Member;
 
 import java.util.List;
 import java.util.Optional;

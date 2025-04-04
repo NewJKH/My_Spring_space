@@ -1,4 +1,4 @@
-package com.jkh.space.fisrt.domain;
+package com.jkh.space.fisrt.domain.member;
 
 public class Member {
     private long id;

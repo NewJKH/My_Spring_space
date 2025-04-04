@@ -1,6 +1,6 @@
 package com.jkh.space.fisrt.controller;
 
-import com.jkh.space.fisrt.domain.Hello;
+import com.jkh.space.fisrt.domain.test.Hello;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
 package com.jkh.space.fisrt.repository;
 
-import com.jkh.space.fisrt.domain.Member;
+import com.jkh.space.fisrt.domain.member.Member;
 
 import java.util.*;
 
@@ -21,6 +21,7 @@ public class MemoryMemberRepository implements MemberRepository{
         return Optional.ofNullable(store.get(id));
     }
 
+    // 보완해서
     @Override
     public Optional<Member> findByName(String name) {
         return store.values()
