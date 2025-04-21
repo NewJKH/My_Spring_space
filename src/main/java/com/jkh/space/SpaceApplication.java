@@ -1,6 +1,6 @@
 package com.jkh.space;
 
-import com.jkh.space.telusko.Dev;
+import com.jkh.space.telusko.boot이해하기.Dev;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

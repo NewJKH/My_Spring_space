@@ -1,4 +1,4 @@
-package com.jkh.space.telusko;
+package com.jkh.space.telusko.boot이해하기;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

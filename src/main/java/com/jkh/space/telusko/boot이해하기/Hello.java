@@ -1,4 +1,4 @@
-package com.jkh.space.telusko;
+package com.jkh.space.telusko.boot이해하기;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
