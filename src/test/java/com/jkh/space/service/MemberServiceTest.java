@@ -1,7 +1,8 @@
 package com.jkh.space.service;
 
-import com.jkh.space.domain.member.Member;
-import com.jkh.space.repository.MemoryMemberRepository;
+import com.jkh.space.kim.domain.member.Member;
+import com.jkh.space.kim.repository.MemoryMemberRepository;
+import com.jkh.space.kim.service.MemberService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

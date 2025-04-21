@@ -1,6 +1,7 @@
 package com.jkh.space.repository;
 
-import com.jkh.space.domain.member.Member;
+import com.jkh.space.kim.domain.member.Member;
+import com.jkh.space.kim.repository.MemoryMemberRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;

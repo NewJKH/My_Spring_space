@@ -1,6 +1,6 @@
-package com.jkh.space.repository;
+package com.jkh.space.kim.repository;
 
-import com.jkh.space.domain.member.Member;
+import com.jkh.space.kim.domain.member.Member;
 
 import java.util.List;
 import java.util.Optional;

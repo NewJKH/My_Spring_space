@@ -1,8 +1,8 @@
-package com.jkh.space.service;
+package com.jkh.space.kim.service;
 
-import com.jkh.space.domain.member.Member;
-import com.jkh.space.repository.MemberRepository;
-import com.jkh.space.repository.MemoryMemberRepository;
+import com.jkh.space.kim.domain.member.Member;
+import com.jkh.space.kim.repository.MemberRepository;
+import com.jkh.space.kim.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;

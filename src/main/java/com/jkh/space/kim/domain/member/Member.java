@@ -1,4 +1,4 @@
-package com.jkh.space.domain.member;
+package com.jkh.space.kim.domain.member;
 
 public class Member {
     private Long id;
