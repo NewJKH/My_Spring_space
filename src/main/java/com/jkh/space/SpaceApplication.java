@@ -24,6 +24,7 @@ public class SpaceApplication {
 		 */
 		Dev dev = context.getBean(Dev.class);
 		dev.build();
+		dev.on();
 
 	}
 
