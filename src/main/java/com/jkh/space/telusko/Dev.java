@@ -1,5 +1,6 @@
 package com.jkh.space.telusko;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -35,14 +36,11 @@ public class Dev {
 //============================================================
     // 개발자는 위 Laptop 에 의존하면 안된다. 왜냐하면 그게 노트북일 수 있고 PC 일 수 있고 기타등등 일 수 있는데 저렇게 하면 Laptop 만 받을 수 있기 때문이다.
     // 위에 저것을 바로 "하드 코딩" 이라고 한다.
+    @Autowired
     Computer computer;
 
-
-
-
-
     public void on(){
-        laptop.build();
+        computer.build();
     }
 
     public void build(){
