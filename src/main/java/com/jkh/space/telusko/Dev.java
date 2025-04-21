@@ -1,6 +1,7 @@
 package com.jkh.space.telusko;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -22,7 +23,7 @@ public class Dev {
      */
 
     // @Autowired / 필드 인젝션 방법 , 즉 Autowired 를 해서 자동으로 주입시켜주는 것이 필드 인젝션이다.
-    Laptop laptop;
+//    Laptop laptop;
 
     // 이 방법은 컨스트럭쳐 인젝션 , 즉, 생성자에서 받아서 활성화 시켜주는 것 우리가 아는 흔히 말하는 DI 대표적인 방법이다.
 //    public Dev(Laptop laptop) {
@@ -37,7 +38,8 @@ public class Dev {
     // 개발자는 위 Laptop 에 의존하면 안된다. 왜냐하면 그게 노트북일 수 있고 PC 일 수 있고 기타등등 일 수 있는데 저렇게 하면 Laptop 만 받을 수 있기 때문이다.
     // 위에 저것을 바로 "하드 코딩" 이라고 한다.
     @Autowired
-    Computer computer;
+    @Qualifier("laptop") // 이렇게하면 desktop 과 laptop 중 laptop 을 우선시 한다. ( 참고로 이건 객체이름이 아니라 " 인스턴스 이름이다. " )
+    private Computer computer;
 
     public void on(){
         computer.build();
