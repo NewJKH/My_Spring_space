@@ -1,0 +1,8 @@
+<mapper namespace="com.example.demo.repository.UserMapper">
+    <insert id="save" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO user (name) VALUES (#{name})
+    </insert>
+    <select id="findById" resultType="User">
+        SELECT * FROM user WHERE id = #{id}
+    </select>
+</mapper>
