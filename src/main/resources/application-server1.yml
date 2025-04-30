@@ -4,3 +4,13 @@ spring:
   config:
     activate:
       on-profile: server1
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+    mybatis:
+      mapper-locations: classpath:mapper/*.xml
+      type-aliases-package: com.example.demo.domain

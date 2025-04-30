@@ -23,10 +23,13 @@ dependencies {
 	implementation 'mysql:mysql-connector-j:8.0.33'
 	implementation 'org.springframework:spring-jdbc:5.3.34'
 	implementation 'com.zaxxer:HikariCP:5.1.0'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.2'
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 	runtimeOnly 'com.mysql:mysql-connector-j'
+	runtimeOnly 'com.h2database:h2' // 테스트용 인메모리 DB
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
