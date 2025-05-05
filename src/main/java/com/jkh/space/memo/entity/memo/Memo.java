@@ -1,5 +1,6 @@
 package com.jkh.space.memo.entity.memo;
 
+import com.jkh.space.memo.entity.dto.MemoRequestDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,9 +13,9 @@ public class Memo {
     private String title;
     private String content;
 
-    public Memo update(Memo memo){
-        this.title = memo.getTitle();
-        this.content = memo.getContent();
+    public Memo update(MemoRequestDto dto){
+        this.title = dto.getTitle();
+        this.content = dto.getContent();
         return this;
     }
 }

@@ -1,7 +1,9 @@
 package com.jkh.space.memo.entity.dto;
 
 import com.jkh.space.memo.entity.memo.Memo;
+import lombok.Getter;
 
+@Getter
 public class MemoResponseDto {
     private Long id;
     private String title;
