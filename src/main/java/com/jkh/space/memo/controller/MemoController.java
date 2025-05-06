@@ -23,7 +23,7 @@ public class MemoController {
     public ResponseEntity<MemoResponseDto> createMemo(@RequestBody MemoRequestDto dto){
         Long id = memoList.isEmpty() ? 1 : Collections.max(memoList.keySet())+1;
 
-        Memo memo = new Memo(id,dto.getTitle(),dto.getContent());
+        Memo memo = new Memo(id, dto.getTitle(), dto.getContent());
         memoList.put(id,memo);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
