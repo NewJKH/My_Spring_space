@@ -15,6 +15,6 @@ public class PostController {
     public String getPost(@PathVariable Long id, Model model) {
         Post post = repository.findById(id);
         model.addAttribute("post", post);
-        return "postView"; // Thymeleaf 템플릿
+        return "postView";
     }
 }
